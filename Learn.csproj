@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="picture.png" />
+    <None Remove="Resources\Услуги школы\for company.jpg" />
+    <None Remove="Resources\Услуги школы\online lessons.jpg" />
+    <None Remove="Resources\Услуги школы\Английский язык.jpg" />
+    <None Remove="Resources\Услуги школы\Испанский язык.jpg" />
+    <None Remove="Resources\Услуги школы\Итальянский язык.jpg" />
+    <None Remove="Resources\Услуги школы\киноклуб.jpg" />
+    <None Remove="Resources\Услуги школы\Китайский язык.jpg" />
+    <None Remove="Resources\Услуги школы\Немецкий язык.png" />
+    <None Remove="Resources\Услуги школы\Подготовка к экзамену ACT.png" />
+    <None Remove="Resources\Услуги школы\Подготовка к экзамену GMAT.png" />
+    <None Remove="Resources\Услуги школы\Подготовка к экзамену GRE.jpeg" />
+    <None Remove="Resources\Услуги школы\Подготовка к экзамену IELTS.jpg" />
+    <None Remove="Resources\Услуги школы\Подготовка к экзамену SAT.png" />
+    <None Remove="Resources\Услуги школы\Подготовка к экзамену TOEFL.jpg" />
+    <None Remove="Resources\Услуги школы\Португальский язык.jpg" />
+    <None Remove="Resources\Услуги школы\Французский язык.jpg" />
+    <None Remove="Resources\Услуги школы\Японский язык.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="picture.png" />
+    <Resource Include="Resources\Услуги школы\for company.jpg" />
+    <Resource Include="Resources\Услуги школы\online lessons.jpg" />
+    <Resource Include="Resources\Услуги школы\Английский язык.jpg" />
+    <Resource Include="Resources\Услуги школы\Испанский язык.jpg" />
+    <Resource Include="Resources\Услуги школы\Итальянский язык.jpg" />
+    <Resource Include="Resources\Услуги школы\киноклуб.jpg" />
+    <Resource Include="Resources\Услуги школы\Китайский язык.jpg" />
+    <Resource Include="Resources\Услуги школы\Немецкий язык.png" />
+    <Resource Include="Resources\Услуги школы\Подготовка к экзамену ACT.png" />
+    <Resource Include="Resources\Услуги школы\Подготовка к экзамену GMAT.png" />
+    <Resource Include="Resources\Услуги школы\Подготовка к экзамену GRE.jpeg" />
+    <Resource Include="Resources\Услуги школы\Подготовка к экзамену IELTS.jpg" />
+    <Resource Include="Resources\Услуги школы\Подготовка к экзамену SAT.png" />
+    <Resource Include="Resources\Услуги школы\Подготовка к экзамену TOEFL.jpg" />
+    <Resource Include="Resources\Услуги школы\Португальский язык.jpg" />
+    <Resource Include="Resources\Услуги школы\Французский язык.jpg" />
+    <Resource Include="Resources\Услуги школы\Японский язык.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
